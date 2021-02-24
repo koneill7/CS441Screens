@@ -39,6 +39,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
         android:layout_marginTop="300dp"
-        android:onClick="switch_activities"/>
+        android:onClick="switch_activities"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:text="Blue"
+        android:onClick="set_blue"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop = "160dp"
+        android:text="Green"
+        android:onClick="set_green"/>
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
