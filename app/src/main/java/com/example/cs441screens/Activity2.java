@@ -15,11 +15,11 @@ public class Activity2 extends AppCompatActivity {
         Button temp = findViewById(R.id.temp);
         ButtonColor buttonColor = ButtonColor.getInstance();
         if(buttonColor.ColorID == 1){
-            temp.setBackgroundColor(Color.BLUE);
+            temp.setBackgroundColor(Color.RED);
 
         }
         else if (buttonColor.ColorID == 2){
-            temp.setBackgroundColor(Color.GREEN);
+            temp.setBackgroundColor(Color.GRAY);
         }
     }
 }
