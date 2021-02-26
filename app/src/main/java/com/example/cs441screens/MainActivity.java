@@ -1,5 +1,6 @@
 package com.example.cs441screens;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -26,6 +27,16 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = findViewById(R.id.fab);
+
+        Button temp = findViewById(R.id.act_button);
+        ButtonColor buttonColor = ButtonColor.getInstance();
+        if(buttonColor.ColorID == 1){
+            temp.setBackgroundColor(Color.BLUE);
+
+        }
+        else if (buttonColor.ColorID == 2){
+            temp.setBackgroundColor(Color.GREEN);
+        }
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -30,31 +30,52 @@
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Caffeine Counter!"
+        android:layout_marginTop="70dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose the theme color of your counter:"
+        android:layout_marginTop="125dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
-        android:layout_width="200dp"
-        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:id="@+id/act_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="600dp"
+        android:text="Start Counting"
         android:onClick="switch_activities"
         />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="160dp"
         android:text="Blue"
         android:onClick="set_blue"/>
 
     <Button
         android:id="@+id/button3"
         android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginTop = "160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop = "200dp"
         android:text="Green"
         android:onClick="set_green"/>
 
