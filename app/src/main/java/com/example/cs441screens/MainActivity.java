@@ -35,7 +35,13 @@ public class MainActivity extends AppCompatActivity {
 
         }
         else if (buttonColor.ColorID == 2){
-            temp.setBackgroundColor(Color.GREEN);
+            temp.setBackgroundColor(Color.parseColor("#488214"));
+        }
+        else if (buttonColor.ColorID == 3){
+            temp.setBackgroundColor(Color.parseColor("#CD3333"));
+        }
+        else if (buttonColor.ColorID == 4){
+            temp.setBackgroundColor(Color.parseColor("#E18E2E"));
         }
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +86,10 @@ public class MainActivity extends AppCompatActivity {
     public void set_green(View view) {
         ButtonColor buttonColor2 = ButtonColor.getInstance();
         buttonColor2.ColorID = 2;
+    }
+    public void set_red(View view) {
+        ButtonColor buttonColor3 = ButtonColor.getInstance();
+        buttonColor3.ColorID = 3;
     }
 
 }

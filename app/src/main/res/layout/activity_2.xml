@@ -20,10 +20,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.836" />
 
     <EditText
         android:id="@+id/user_input"
@@ -31,10 +32,12 @@
         android:layout_height="34dp"
         android:background="#D3F0F2"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="@+id/extra_text"
+        app:layout_constraintBottom_toTopOf="@+id/submit_caffeine"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/extra_text" />
+        app:layout_constraintTop_toTopOf="@+id/extra_text"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/caffeine_text"
@@ -43,8 +46,10 @@
         android:text="@string/input_caffeine"
         app:layout_constraintBottom_toTopOf="@+id/extra_text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.747" />
 
     <TextView
         android:id="@+id/extra_text"
@@ -54,5 +59,18 @@
         app:layout_constraintBottom_toTopOf="@+id/submit_caffeine"
         app:layout_constraintEnd_toEndOf="@+id/caffeine_text"
         app:layout_constraintStart_toStartOf="@+id/caffeine_text"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:src="@drawable/caffeine_chart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.921" />
 </androidx.constraintlayout.widget.ConstraintLayout>

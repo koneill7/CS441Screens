@@ -9,5 +9,5 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="input_caffeine">Please  enter your caffeine amount.</string>
+    <string name="input_caffeine">Instructions: Enter the amounts of caffeine you have had to see your current total.</string>
 </resources>

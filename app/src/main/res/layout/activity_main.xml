@@ -20,7 +20,9 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <include
+        layout="@layout/content_main"
+         />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -35,6 +37,7 @@
         android:layout_height="wrap_content"
         android:text="Welcome to the Caffeine Counter!"
         android:layout_marginTop="70dp"
+        android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,6 +46,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="18dp"
         android:text="Choose the theme color of your counter:"
         android:layout_marginTop="125dp"
         app:layout_constraintBottom_toTopOf="parent"
@@ -51,14 +55,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
         android:id="@+id/act_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="300dp"
         android:text="Start Counting"
         android:onClick="switch_activities"
         />
@@ -69,6 +73,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="160dp"
         android:text="Blue"
+        android:backgroundTint="@android:color/holo_blue_dark"
         android:onClick="set_blue"/>
 
     <Button
@@ -77,7 +82,18 @@
         android:layout_height="40dp"
         android:layout_marginTop = "200dp"
         android:text="Green"
+        android:backgroundTint="@android:color/holo_green_dark"
         android:onClick="set_green"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop = "240dp"
+        android:text="Red"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:onClick="set_red"/>
+
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
