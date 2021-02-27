@@ -9,59 +9,50 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text = "Hello second screen!"
-        app:layout_constraintBottom_toTopOf="parent"
+        android:text="Caffeine Counter:"
+        app:layout_constraintBottom_toTopOf="@+id/caffeine_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-         />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/submit_caffeine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="352dp"
-        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/user_input"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
         android:background="#D3F0F2"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/extra_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="@+id/extra_text" />
 
     <TextView
         android:id="@+id/caffeine_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/input_caffeine"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="164dp"
-        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/extra_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/extra_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="206dp"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:text="Enter here:"
+        app:layout_constraintBottom_toTopOf="@+id/submit_caffeine"
+        app:layout_constraintEnd_toEndOf="@+id/caffeine_text"
+        app:layout_constraintStart_toStartOf="@+id/caffeine_text"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

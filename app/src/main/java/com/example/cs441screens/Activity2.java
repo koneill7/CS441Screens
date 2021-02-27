@@ -29,12 +29,17 @@ public class Activity2 extends AppCompatActivity {
             submit.setBackgroundColor(Color.GREEN);
         }
         submit.setOnClickListener(new View.OnClickListener(){
+            int store = 0;
+            int last;
+            int accum;
             @Override
             public void onClick(View view){
                 userText[0] = (EditText)findViewById(R.id.user_input);
-                userText[0].getText().toString();
+                last = store;
+                store = Integer.parseInt(userText[0].getText().toString());
+                accum = last + store;
                 caffeineText[0] = (TextView)findViewById(R.id.caffeine_text);
-                caffeineText[0].setText("Your current amount of caffeine: " + userText[0].getText().toString());
+                caffeineText[0].setText("Your current amount of caffeine: " + accum);
             }
         });
     }
