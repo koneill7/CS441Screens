@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.graphics.Color;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class Activity2 extends AppCompatActivity {
 
@@ -12,14 +15,27 @@ public class Activity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
-        Button temp = findViewById(R.id.temp);
+        Button submit = findViewById(R.id.submit_caffeine);
+        final EditText[] userText = new EditText[1];
+
+        final TextView[] caffeineText = new TextView[1];
+
         ButtonColor buttonColor = ButtonColor.getInstance();
         if(buttonColor.ColorID == 1){
-            temp.setBackgroundColor(Color.BLUE);
+            submit.setBackgroundColor(Color.BLUE);
 
         }
         else if (buttonColor.ColorID == 2){
-            temp.setBackgroundColor(Color.GREEN);
+            submit.setBackgroundColor(Color.GREEN);
         }
+        submit.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                userText[0] = (EditText)findViewById(R.id.user_input);
+                userText[0].getText().toString();
+                caffeineText[0] = (TextView)findViewById(R.id.caffeine_text);
+                caffeineText[0].setText("Your current amount of caffeine: " + userText[0].getText().toString());
+            }
+        });
     }
 }
